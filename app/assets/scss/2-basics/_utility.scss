@@ -1,0 +1,33 @@
+/*
+  ----------------
+  Utility
+  ----------------
+*/
+
+.container {
+  @include container;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+/*
+  ----------------
+  Responsive
+  ----------------
+*/
+
+.sp-only {
+  @media #{$pc} {
+    display: none !important;
+  }
+}
+
+
+.pc-only {
+  @media #{$sp} {
+    display: none !important;
+  }
+}
+

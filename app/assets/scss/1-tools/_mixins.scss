@@ -1,0 +1,40 @@
+// Container
+
+@mixin container {
+  max-width: #{$container};
+  @include margin(null auto);
+  position: relative;
+
+  @media #{$sp} {
+    @include padding(null 10px);
+  }
+}
+
+
+// Clear fix （already written in Bourbon）
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// Hover opacitiy for links ( just so they're all the same )
+
+@mixin hoverlink {
+  transition: 0.2s ease-in-out;
+  backface-visibility: hidden;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+  &::before,
+  &::after {
+    backface-visibility: hidden;
+  }
+}
+
+

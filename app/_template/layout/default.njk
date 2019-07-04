@@ -7,10 +7,13 @@
 {% endblock -%}
 </head>
 <body class="{% if page %}{{ page }}{% endif %}">
+  {% include 'partial/header.njk' %}
+
   {# Page content #}
   {%- block content %}
   {% endblock -%}
-
+  
+  {% include 'partial/footer.njk' %}
   <script src="/assets/js/all.min.js"></script>
   {# Custom js #}
   {%- block customJs %}

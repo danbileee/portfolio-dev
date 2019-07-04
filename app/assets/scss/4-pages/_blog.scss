@@ -1,0 +1,116 @@
+/*
+  ----------------
+  Blog page
+  ----------------
+*/
+
+.blog {
+  @include padding(230px 0 0);
+  @media #{$sp} {
+    @include padding(120px 0 0);
+  }
+
+  &-ttlarea {
+    margin-bottom: 80px;
+    @media #{$sp} {
+      margin-bottom: 42px;
+    }
+  }
+
+  &-list {
+    &__item {
+      &:not(:last-of-type) {
+        @media #{$pc} {
+          margin-bottom: 20px;
+        }
+      }
+      &:last-of-type {
+        @media #{$sp} {
+          border-bottom: 1px solid rgba($tertiary-color, .05);
+        }
+      }
+    }
+
+    &__link {
+      position: relative;
+      width: 75%;
+      border-top: 1px solid rgba($tertiary-color, .05);
+      @include padding(30px 0 40px);
+      transition: all ease-in-out .3s;
+
+      @media #{$sp} {
+        width: 100%;
+        @include padding(25px 0 35px);
+      }
+
+      &:hover {
+        @media #{$pc} {
+          transform: translateX(2%);
+          // .blog-list__label {
+          //   opacity: 1;
+          // }
+        }
+      }
+
+      .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        @media #{$sp} {
+          // text-align: center;
+          font-size: 16px;
+        }
+      }
+
+      .date {
+        color: #989898;
+        font-size: 14px;
+        margin-bottom: 25px;
+        @media #{$sp} {
+          // text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+
+      .detail {
+        font-size: 14px;
+        line-height: 2;
+        @media #{$sp} {
+          font-size: 13px;
+        }
+      }
+    }
+
+    // &__label {
+    //   position: absolute;
+    //   writing-mode: vertical-lr;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   width: 5%;
+    //   height: 100%;
+    //   left: -7%;
+    //   opacity: 0;
+    //   transition: all ease-in-out .3s;
+
+    //   @media #{$sp} {
+    //     writing-mode: horizontal-tb;
+    //     font-size: 12px;
+    //     width: 50px;
+    //     height: 25px;
+    //     left: 0;
+    //     top: -1px;
+    //     opacity: 1;
+    //   }
+
+    //   &--dev {
+    //     background: $primary-color;
+    //     color: $tertiary-color;
+    //   }
+
+    //   &--design {
+    //     background: $secondary-color;
+    //     color: #fff;
+    //   }
+    // }
+  }
+}

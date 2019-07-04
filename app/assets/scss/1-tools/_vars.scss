@@ -1,24 +1,34 @@
 // Breakpoint
 
-$sp: "all and (max-width : 768px)";
-
-$pc: "all and (min-width: 769px)";
+$sp: "all and (max-width : 999px)";
+$strictsp: "all and (max-width : 680px)";
+$pc: "all and (min-width: 1000px)";
 
 // Font-family
 
-$font-family: "roboto", "Helvetica Neue", Helvetica, Arial, "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif;
+$font-family: "Lato",
+"Noto Sans KR",
+"맑은 고딕",
+malgun gothic,
+"돋움",
+Dotum,
+"roboto",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
 
 // Color
 
-$primary-color: #000;
+$primary-color: #47F6CB;
 
-$secondary-color: #ccc;
+$secondary-color: #4263EB;
 
-$tertiary-color: #eee;
+$tertiary-color: #121111;
 
 // Container
 
-$container: 1020px;
+$container: 1000px;
 
 // Grid
 

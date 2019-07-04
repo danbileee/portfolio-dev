@@ -1,0 +1,102 @@
+/*
+  ----------------
+  About page
+  ----------------
+*/
+
+.about {
+  @include padding(230px 0 0);
+
+  @media #{$sp} {
+    @include padding(120px 0 0);
+  }
+
+  &-ttlarea {
+    margin-bottom: 120px;
+    @media #{$sp} {
+      margin-bottom: 60px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media #{$sp} {
+      flex-direction: column;
+    }
+    
+    &__img {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 450px;
+      @media #{$sp} {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      img {
+        position: absolute;
+        display: block;
+        width: 450px;
+        height: 245px;
+        left: -25px;
+        @media #{$sp} {
+          position: relative;
+          left: auto;
+          width: 300px;
+          height: 163px;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      @media #{$pc} {
+        padding-top: 5px;
+      }
+
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      @include padding(0 20px 0 50px);
+      
+      @media #{$sp} {
+        flex-direction: column;
+        width: 100%;
+        @include padding(0);
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 35px;
+      }
+
+      .svg {
+        padding-top: 9px;
+        @media #{$sp} {
+          padding-top: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+      .para {
+        width: 380px;
+        line-height: 2;
+        @media #{$sp} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

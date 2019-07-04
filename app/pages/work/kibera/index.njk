@@ -1,0 +1,48 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "KiBERA" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "work-single" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<section id="kibera" class="work-detail">
+  <div class="work-detail__container container">
+    <div class="work-detail__txtarea">
+      <h3 class="work-detail__ttl bold-ttl">KiBERA</h3>
+      <div class="work-detail__ttlimg">
+        <img src="/assets/img/work/ttl-kibera-pc.svg" alt="KiBERA" class="pc-only">
+        <img src="/assets/img/work/ttl-kibera-sp.svg" alt="KiBERA" class="sp-only">
+      </div>
+      <a href="http://kibera.co.jp" target="_blank" class="work-detail__link">visit on website</a>
+      <div class="work-detail__imgarea sp-only">
+        <img src="/assets/img/work/mockup-12.jpg" alt="KiBERA">
+      </div>
+      <p class="work-detail__para">여성 구두 전문 브랜드 KiBERA의 공식 웹사이트 제작. SEO 대책과 EC 사이트로의 동선 유도에 초점을 두었습니다. 사이드 프로젝트로 EC 사이트의 유지 보수도 담당했습니다.</p>
+      <p class="work-detail__role"><strong>role&nbsp;&nbsp;&nbsp;</strong>전 페이지 프론트엔드 개발</p>
+      <ul class="work-detail__taglist noselect">
+        <li class="work-detail__tagitem">구두 브랜드</li>
+        <li class="work-detail__tagitem">SEO</li>
+        <li class="work-detail__tagitem">EC 사이트</li>
+      </ul>
+    </div>{# work-detail__txtarea #}
+    <div class="work-detail__imgarea pc-only">
+      <img src="/assets/img/work/mockup-12.jpg" alt="KiBERA">
+    </div>
+  </div>{# container #}
+</section>{# section-rancho #}
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "mahna mahna" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "work-single" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<section id="mahna" class="work-detail">
+  <div class="work-detail__container container">
+    <div class="work-detail__txtarea">
+      <h3 class="work-detail__ttl bold-ttl">mahna mahna Inc.</h3>
+      <div class="work-detail__ttlimg">
+        <img src="/assets/img/work/ttl-mahna-pc.svg" alt="mahna mahna Inc." class="pc-only">
+        <img src="/assets/img/work/ttl-mahna-sp.svg" alt="mahna mahna Inc." class="sp-only">
+      </div>
+      <a href="https://mahna.co.jp/" target="_blank" class="work-detail__link">visit on website</a>
+      <div class="work-detail__imgarea sp-only">
+        <img src="/assets/img/work/mockup-02.jpg" alt="mahna mahna Inc.">
+      </div>
+      <p class="work-detail__para">의류 렌탈 서비스를 제공하는 스타일 셀렉트샵 마나마나의 공식 웹사이트 제작. 타이포그래피와 애니메이션에 주안점을 두어 개발하였습니다.</p>
+      <p class="work-detail__role"><strong>role&nbsp;&nbsp;&nbsp;</strong>서브 페이지 프론트엔드 개발</p>
+      <ul class="work-detail__taglist noselect">
+        <li class="work-detail__tagitem">의류 렌탈</li>
+        <li class="work-detail__tagitem">타이포그래피</li>
+        <li class="work-detail__tagitem">애니메이션</li>
+      </ul>
+    </div>{# work-detail__txtarea #}
+    <div class="work-detail__imgarea pc-only">
+      <img src="/assets/img/work/mockup-02.jpg" alt="mahna mahna Inc.">
+    </div>
+  </div>{# container #}
+</section>{# section-rancho #}
+
+{% endblock %}

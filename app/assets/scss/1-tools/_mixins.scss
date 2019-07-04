@@ -6,7 +6,7 @@
   position: relative;
 
   @media #{$sp} {
-    @include padding(null 10px);
+    @include padding(null 20px);
   }
 }
 

@@ -1,13 +1,16 @@
 // customized reset / normalize
 
-* {
-  box-sizing: border-box;
-}
-
 html {
+  box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {

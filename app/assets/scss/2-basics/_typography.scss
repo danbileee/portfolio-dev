@@ -6,4 +6,18 @@
 
 body {
   font-family: $font-family;
+  color: $tertiary-color;
+  font-size: 16px;
+
+  @media #{$sp} {
+    font-size: 14px;
+  }
+}
+
+.bold-ttl {
+  position: absolute;
+  left: -99999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

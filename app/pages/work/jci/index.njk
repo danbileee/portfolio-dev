@@ -1,0 +1,47 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "Yokosuka JCI" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "work-single" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<section id="jci" class="work-detail">
+  <div class="work-detail__container container">
+    <div class="work-detail__txtarea">
+      <h3 class="work-detail__ttl bold-ttl">Yokosuka JCI</h3>
+      <div class="work-detail__ttlimg">
+        <img src="/assets/img/work/ttl-jci-pc.svg" alt="Yokosuka JCI" class="pc-only">
+        <img src="/assets/img/work/ttl-jci-sp.svg" alt="Yokosuka JCI" class="sp-only">
+      </div>
+      <a href="http://yokosukajc.com" target="_blank" class="work-detail__link">visit on website</a>
+      <div class="work-detail__imgarea sp-only">
+        <img src="/assets/img/work/mockup-07.jpg" alt="Yokosuka JCI">
+      </div>
+      <p class="work-detail__para">지역 자치 비영리단체인 요코스카 청년 회의소의 공식 웹사이트를 제작했습니다. 워드프레스 개발자와의 협업에 용이하도록 인라인 태그 및 BEM 등을 활용했습니다.</p>
+      <p class="work-detail__role"><strong>role&nbsp;&nbsp;&nbsp;</strong>서브 페이지 프론트엔드 개발</p>
+      <ul class="work-detail__taglist noselect">
+        <li class="work-detail__tagitem">비영리단체</li>
+        <li class="work-detail__tagitem">워드프레스 협업</li>
+      </ul>
+    </div>{# work-detail__txtarea #}
+    <div class="work-detail__imgarea pc-only">
+      <img src="/assets/img/work/mockup-07.jpg" alt="Yokosuka JCI">
+    </div>
+  </div>{# container #}
+</section>{# section-rancho #}
+
+{% endblock %}

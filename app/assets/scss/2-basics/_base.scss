@@ -3,3 +3,38 @@
   Base styles
   ----------------
 */
+
+body {
+  background: #FEFEFE;
+}
+
+::selection {
+  background: rgba($primary-color, .6);
+}
+
+::-moz-selection {
+  background: rgba($primary-color, .6);
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}

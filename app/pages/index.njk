@@ -1,12 +1,12 @@
 {% extends "layout/default.njk" %}
 
 {# Custom SEO tags, leave blank to apply the default values #}
-{% set title = "" %}
+{% set title = "front-end developer portfolio" %}
 {% set description = "" %}
 {% set keywords = "" %}
 
 {# Page settings and also body class #}
-{% set page = "top" %}
+{% set page = "main" %}
 
 {# Custom tags before </head> #}
 {% block customHead %}
@@ -18,5 +18,141 @@
 
 {# Main content #}
 {% block content %}
+
+<section id="top" class="top">
+  <div class="top-container container">
+    <div class="top-ttlarea">    
+      <h1 class="top-ttlarea__ttl bold-ttl">FROM BLOCK TO BODY</h1>
+      <div class="top-ttlarea__ttlimg">
+        <img src="assets/img/main/top-ttl-pc.svg" alt="FROM BLOCK TO BODY" class="pc-only">
+        <img src="assets/img/main/top-ttl-sp.svg" alt="FROM BLOCK TO BODY" class="sp-only">
+      </div>
+      <p class="top-ttlarea__ttlsub bold-ttl">I build up and make things happen.</p>
+      <div class="top-ttlarea__ttlsubimg">
+        <img src="assets/img/main/top-subttl-pc.svg" alt="I build up and make things happen." class="pc-only">
+        <img src="assets/img/main/top-subttl-sp.svg" alt="I build up and make things happen." class="sp-only">
+      </div>
+    </div>
+    <div class="top-img"><img src="assets/img/main/blocks.jpg" alt=""></div>
+    <div class="top-scroll">
+      <a href="#introduce" id="scroll">
+        <svg id="scroll-svg" width="26" height="35" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="circle" cx="13" cy="22" r="13" fill="#47F6CB"/>
+          <path class="arrow" fill-rule="evenodd" clip-rule="evenodd" d="M8.66987 17.25L13 24L17.3301 17.25L14 17.25L14 -1.45565e-07L12 -2.32987e-07L12 17.25L8.66987 17.25Z" fill="#121111"/>
+        </svg>
+      </a>
+    </div>
+  </div>{# container #}
+</section>{# section-top #}
+
+<section id="introduce" class="intro">
+  <div class="intro-container container">
+    <div class="intro-ttlarea">
+      <h2 class="intro-ttlarea__ttl bold-ttl">aiming for a full-time...</h2>
+      <div class="intro-ttlarea__ttlimg">
+        <img src="assets/img/main/intro-ttl.svg" alt="">
+      </div>
+    </div>
+    <ul class="intro-list">
+      <li class="intro-list__item">
+        <h3 class="intro-list__ttl bold-ttl">web developer</h3>
+        <div class="intro-list__ttlimg">
+          <img src="assets/img/main/intro-subttl01.svg" alt="">
+        </div>
+        <p class="intro-list__txt">마크업 언어와 자바스크립트로 프론트엔드 개발을 하고 있습니다. <br class="pc-only">디자인을 정확히 구현하는 것과 최적의 사용성을 제공하는 것이 <br class="pc-only">개발자로서 저의 목표입니다.</p>
+      </li>
+      <li class="intro-list__item">
+        <h3 class="intro-list__ttl bold-ttl">team player</h3>
+        <div class="intro-list__ttlimg">
+          <img src="assets/img/main/intro-subttl02.svg" alt="">
+        </div>
+        <p class="intro-list__txt">팀 단위의 프로젝트에 적합한 범용적인 스타일 관리 및 git 활용, <br class="pc-only">그리고 무엇보다도 <br class="pc-only">유지 보수가 쉬운 '좋은 코드' 작성을 중요시합니다.</p>
+      </li>
+      <li class="intro-list__item">
+        <h3 class="intro-list__ttl bold-ttl">language learner</h3>
+        <div class="intro-list__ttlimg">
+          <img src="assets/img/main/intro-subttl03.svg" alt="">
+        </div>
+        <p class="intro-list__txt">언어 배우는 것을 좋아합니다. <br class="pc-only">사람과의 소통은 한국어, 영어, 일본어를 사용하고 있습니다. <br class="pc-only">현재는 컴퓨터와의 소통을 잘하기 위해 공부중입니다.</p>
+      </li>
+    </ul>
+  </div>{# container #}
+</section>{# section-introduce #}
+
+<section id="workslide" class="workslide">
+  <div class="workslide-ttlarea">  
+    <h2 class="workslide-ttlarea__ttl bold-ttl">HERE ARE MY WORKS</h2>
+    <div class="workslide-ttlarea__ttlimg">
+      <img src="assets/img/main/slide-ttl.svg" alt="">
+    </div>
+  </div>{# workslide-ttlarea #}
+  <div class="swiper-container js-mainslider">  
+    <ul class="workslide-slidearea swiper-wrapper">
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/ieerabi/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-01.jpg" alt="ieerabi.net">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/mahna/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-02.jpg" alt="mahna mahna">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/rancho/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-03.jpg" alt="Rancho Sombrero">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/obc/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-04.jpg" alt="Original Bag Collection">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/trocco/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-05.jpg" alt="trocco">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/jci/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-06.jpg" alt="Yokosuka JCI">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/gimbap/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-07.jpg" alt="Gimbap Chat">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/nagaoka/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-08.jpg" alt="Nagaoka Kosakusho">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/pcp/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-09.jpg" alt="PCP">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/bprost/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-10.jpg" alt="B-prost">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/clipla/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-11.jpg" alt="CLIPLA">
+        </a>
+      </li>
+      <li class="workslide-slidearea__item swiper-slide">
+        <a href="/work/kibera/" class="workslide-slidearea__link">
+          <img src="assets/img/main/slide-12.jpg" alt="KiBERA">
+        </a>
+      </li>
+    </ul>{# swiper-wrapper #}
+  </div>{# swiper-container #}
+  <div class="workslide-btn noselect">
+    <a href="/work/" class="workslide-btn__detail">see details</a>
+  </div>
+</section>{# section-workslide #}
 
 {% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "B-prost" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "work-single" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<section id="bprost" class="work-detail">
+  <div class="work-detail__container container">
+    <div class="work-detail__txtarea">
+      <h3 class="work-detail__ttl bold-ttl">B-prost</h3>
+      <div class="work-detail__ttlimg">
+        <img src="/assets/img/work/ttl-bprost-pc.svg" alt="B-prost" class="pc-only">
+        <img src="/assets/img/work/ttl-bprost-sp.svg" alt="B-prost" class="sp-only">
+      </div>
+      <a href="http://b-prost.tsunagaru.biz" target="_blank" class="work-detail__link">visit on website</a>
+      <div class="work-detail__imgarea sp-only">
+        <img src="/assets/img/work/mockup-11.jpg" alt="B-prost">
+      </div>
+      <p class="work-detail__para">보험 설계사 B-Prost의 공식 웹사이트 제작. <br class="pc-only">로컬 웹폰트 사용과 반응형 이미지 사이즈 적용으로 디자인을 유연하게 구현하고자 했습니다.</p>
+      <p class="work-detail__role"><strong>role&nbsp;&nbsp;&nbsp;</strong>메인 페이지 프론트엔드 개발</p>
+      <ul class="work-detail__taglist noselect">
+        <li class="work-detail__tagitem">보험 설계사</li>
+        <li class="work-detail__tagitem">웹폰트</li>
+        <li class="work-detail__tagitem">반응형 이미지</li>
+      </ul>
+    </div>{# work-detail__txtarea #}
+    <div class="work-detail__imgarea pc-only">
+      <img src="/assets/img/work/mockup-11.jpg" alt="B-prost">
+    </div>
+  </div>{# container #}
+</section>{# section-rancho #}
+
+{% endblock %}

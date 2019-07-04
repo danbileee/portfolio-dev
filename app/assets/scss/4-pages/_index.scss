@@ -3,3 +3,271 @@
   Home page
   ----------------
 */
+
+.top {
+  width: 100vw;
+  @include padding(220px 0 250px);
+  margin-bottom: 30px;
+
+  @media #{$sp} {
+    @include padding(90px 0 200px);
+  }
+
+  &-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-ttlarea {
+    padding-left: 25px;
+    @media #{$sp} {
+      padding-left: 0;
+    }
+ 
+    &__ttlimg {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-img {
+    position: absolute;
+    display: inline-block;
+    width: 650px;
+    height: 298px;
+    top: 60px;
+    right: -40px;
+    z-index: -1;
+
+    @media #{$sp} {
+      right: 20px;
+      top: auto;
+      bottom: -200px;
+    }
+
+    @media #{$strictsp} {
+      width: 85vw;
+      height: 40vw;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-scroll {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: -220px;
+    left: 0;
+    @media #{$sp} {
+      display: none;
+    }
+  }
+}
+
+
+.intro {
+  padding-top: 120px;
+  @media #{$sp} {
+    padding-top: 100px;
+  }
+
+  &-container {
+    display: flex;
+    @media #{$sp} {
+      flex-direction: column;
+    }
+  }
+
+  &-ttlarea {
+    width: 50%;
+    @media #{$sp} {
+      width: 100%;
+    }
+
+    &__ttlimg {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @media #{$sp} {
+        justify-content: left;
+        margin-bottom: 50px;
+        img {
+          width: 280px;
+          height: 54px;
+        }
+      }
+    }
+  }
+
+  &-list {
+    width: 50%;
+    padding-top: 10px;
+    @media #{$sp} {
+      width: 100%;
+      padding-top: 0;
+    }
+
+    &__item {
+      &:not(:last-of-type) {
+        margin-bottom: 60px;
+        @media #{$sp} {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__ttlimg {
+      margin-bottom: 20px;
+      @media #{$sp} {
+        margin-bottom: 10px;
+        img {
+          width: auto;
+          height: 20px;
+        }
+      }
+    }
+
+    &__txt {
+      line-height: 1.8;
+    }
+  }
+}
+
+
+.workslide {
+  padding-top: 200px;
+  @media #{$sp} {
+    @include padding(120px 0 8vw);
+  }
+
+  &-ttlarea {
+    display: flex;
+    justify-content: center;
+
+    &__ttlimg {
+      img {
+        width: 334px;
+        height: 58px;
+      }
+    }
+  }
+
+  &-slidearea {
+    display: flex;
+    @include margin(55px 0);
+    @media #{$sp} {
+      @include margin(25px 0 55px);
+    }
+
+    &__item {
+      width: 170px;
+      height: 170px;
+      @media #{$sp} {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    &__link {
+      position: relative;
+      transition: all ease-in-out .3s;
+
+      &:hover {
+        transform: scale(1.05);
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        box-shadow: 0 5px 20px rgba(#000, .05);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: all ease-in-out .3s;
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+
+    &__detail {
+      position: relative;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: -5px;
+      @media #{$sp} {
+        font-size: 16px;
+      }
+
+      &:hover {
+        &::before {
+          width: 146px;
+          @media #{$sp} {
+            width: 35px;
+          }
+        }
+        &::after {
+          right: -32px;
+          @media #{$sp} {
+            right: -22px;
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: $primary-color;
+        top: -10px;
+        left: -33px;
+        z-index: -1;
+        transition: all ease-in-out .3s;
+        @media #{$sp} {
+          width: 35px;
+          height: 35px;
+          top: -6px;
+          left: -25px;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 22px;
+        background: url(../img/shared/arrow.svg) 50% / contain no-repeat;
+        transform: rotate(-90deg);
+        top: 2px;
+        right: -25px;
+        transition: all ease-in-out .3s;
+
+        @media #{$sp} {
+          width: 7px;
+          height: 20px;
+          top: 1px;
+          right: -22px;
+        }
+      }
+    }
+  }
+}

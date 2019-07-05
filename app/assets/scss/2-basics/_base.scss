@@ -4,8 +4,13 @@
   ----------------
 */
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: #FEFEFE;
+  overflow-x: hidden;
 }
 
 ::selection {

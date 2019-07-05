@@ -59,3 +59,17 @@ $(document).ready(function() {
   });
 
 });
+
+//---------------------------------
+// Animation
+//---------------------------------
+
+var windowBottom = $(window).scrollTop() + $(window).height();
+$(window).on('scroll', scrollHandler);
+scrollHandler();
+
+function scrollHandler() {
+  if (windowBottom === $(document).height()) {
+    $('.footer').addClass('animate-footer-fade-in');
+  };
+};

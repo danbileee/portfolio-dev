@@ -1,14 +1,14 @@
 # portfolio-dev
-안녕하세요. 블록을 쌓아 몸체를 만드는 과정이 즐거운 프론트엔드 개발자 이단비입니다.
-저의 포트폴리오 사이트 구성은 아래와 같습니다.
-
-
+안녕하세요. 블록을 쌓아 몸체를 만드는 과정이 즐거운 프론트엔드 개발자 이단비입니다.<br>
+저의 포트폴리오 사이트는 다음 링크를 통해 방문하실 수 있습니다(http://suachuva.kr)<br>
+구성은 아래와 같습니다.
+<br>
+<br>
 ## home
 > FROM BLOCK TO BODY,
 > I build up and make things happen.
 
 aiming for a full-time web developer & team player & and language learner.
-
 
 ## work
 > Here are my works.
@@ -26,7 +26,6 @@ aiming for a full-time web developer & team player & and language learner.
 - B-prost (http://b-prost.tsunagaru.biz ID/PW는 문의)
 - KiBERA (http://kibera.co.jp)
 
-
 ## about me
 > Hi, I'm a front-end developer who can design.
 #### 2011-2017
@@ -39,12 +38,3 @@ aiming for a full-time web developer & team player & and language learner.
 새로운 언어 배우기
 #### GOALS
 도움이 되는 웹 서비스를 꾸준히 만들기
-
-
-
-***
-
-포트폴리오 사이트는 아래 링크를 통해 방문하실 수 있습니다.<br>
-<a href="http://suachuva.kr" target="_blank">http://suachuva.kr</a>
-
-감사합니다.

@@ -12,6 +12,7 @@ aiming for a full-time web developer & team player & and language learner.
 
 ## work
 > Here are my works.
+
 음식점, 패션 브랜드, 비영리 단체, 부동산 중개, 의료 서비스 등 다양한 분야의 클라이언트들을 위해 웹사이트를 구축하였습니다. 대부분은 일본 웹 에이전시 근무 때 작업한 내용이므로 실제 웹사이트 방문시 일본어로 되어 있는 점은 양해 부탁드립니다.
 - Rancho Sombrero (https://ranchosombrero.com.au/)
 - mahna mahna (https://mahna.co.jp/)

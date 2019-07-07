@@ -82,8 +82,16 @@
 .work-grid {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 250px 250px 250px;
+  grid-template: 
+    "a b c d"250px
+    "e f g h"250px
+    "i j k l"250px /
+    25% 25% 25% 25%;
+
   @media #{$sp} {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;    
   }
 
   &__item {
@@ -93,6 +101,9 @@
     }
 
     &:nth-of-type(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: a;
       .work-grid__link {
         background: url(../img/work/item-01-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -112,6 +123,9 @@
     }
 
     &:nth-of-type(2) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: b;
       .work-grid__link {
         background: url(../img/work/item-02-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -130,6 +144,9 @@
     }
 
     &:nth-of-type(3) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      grid-area: c;
       .work-grid__link {
         background: url(../img/work/item-03-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -148,6 +165,9 @@
     }
 
     &:nth-of-type(4) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 4;
+      grid-area: d;
       .work-grid__link {
         background: url(../img/work/item-04-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -166,6 +186,9 @@
     }
 
     &:nth-of-type(5) {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      grid-area: e;
       .work-grid__link {
         background: url(../img/work/item-05-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -184,6 +207,9 @@
     }
 
     &:nth-of-type(6) {
+      -ms-grid-row: 2;
+      -ms-grid-column: 2;
+      grid-area: f;
       .work-grid__link {
         background: url(../img/work/item-06-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -203,6 +229,9 @@
     }
 
     &:nth-of-type(7) {
+      -ms-grid-row: 2;
+      -ms-grid-column: 3;
+      grid-area: g;
       .work-grid__link {
         background: url(../img/work/item-07-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -221,6 +250,9 @@
     }
 
     &:nth-of-type(8) {
+      -ms-grid-row: 2;
+      -ms-grid-column: 4;
+      grid-area: h;
       .work-grid__link {
         background: url(../img/work/item-08-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -239,6 +271,9 @@
     }
 
     &:nth-of-type(9) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-area: i;
       .work-grid__link {
         background: url(../img/work/item-09-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -257,6 +292,9 @@
     }
 
     &:nth-of-type(10) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 2;
+      grid-area: j;
       .work-grid__link {
         background: url(../img/work/item-10-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -275,6 +313,9 @@
     }
 
     &:nth-of-type(11) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
+      grid-area: k;
       .work-grid__link {
         background: url(../img/work/item-11-bw.jpg) 50% / cover no-repeat;
         &:hover {
@@ -293,6 +334,9 @@
     }
 
     &:nth-of-type(12) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 4;
+      grid-area: l;
       .work-grid__link {
         background: url(../img/work/item-12-bw.jpg) 50% / cover no-repeat;
         &:hover {

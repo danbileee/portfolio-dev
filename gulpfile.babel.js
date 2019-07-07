@@ -81,7 +81,7 @@ const paths = {
 // scss compile
 export function styles() {
   const plugins = [
-    autoprefixer({browsers: ["last 50 version"]}),
+    autoprefixer({grid: true, browsers: ["last 50 version"]}),
     cssnano()
   ];
   return gulp.src(paths.styles.src)

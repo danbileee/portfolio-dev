@@ -153,6 +153,10 @@
       display: flex;
       width: 483px;
       height: 81px;
+      @media #{$sp} {
+        width: 334px;
+        height: 64px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -180,9 +184,13 @@
       }
 
       &:hover {
-        transform: scale(1.05);
+        @media #{$pc} {
+          transform: scale(1.05);
+        }
         &::after {
-          opacity: 1;
+          @media #{$pc} {
+            opacity: 1;
+          }
         }
       }
 

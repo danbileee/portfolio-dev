@@ -111,7 +111,6 @@ export function images() {
   return gulp.src(paths.images.src)
     .pipe(plumber())
     .pipe(newer(paths.images.dest))
-    .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest))
 }
 

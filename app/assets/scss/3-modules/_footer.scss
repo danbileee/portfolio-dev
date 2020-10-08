@@ -21,11 +21,11 @@
     &__link {
       @include hoverlink;
       display: inline-block;
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
 
       &:not(:last-of-type) {
-        margin-right: 24px;
+        margin-right: 16px;
       }
 
       img {

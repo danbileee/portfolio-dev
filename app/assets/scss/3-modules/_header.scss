@@ -273,11 +273,11 @@ input#header-menu {
 
     &__link {
       display: inline-block;
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
 
       &:not(:last-of-type) {
-        margin-right: 30px;
+        margin-right: 16px;
       }
 
       img {

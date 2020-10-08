@@ -1,0 +1,48 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "배리" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "work-single" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<section id="vary" class="work-detail">
+  <div class="work-detail__container container">
+    <div class="work-detail__txtarea">
+      <h3 class="work-detail__ttl bold-ttl">배리</h3>
+      <div class="work-detail__ttlimg animate-fade-up">
+        <img src="/assets/img/work/ttl-vary-pc.svg" alt="배리" class="pc-only">
+        <img src="/assets/img/work/ttl-vary-sp.svg" alt="배리" class="sp-only">
+      </div>
+      <a href="https://www.vary.one" target="_blank" class="work-detail__link animate-fade-up">visit website</a>
+      <div class="work-detail__imgarea animate-fade-left sp-only">
+        <img src="/assets/img/work/mockup-13.jpg" alt="배리">
+      </div>
+      <p class="work-detail__para animate-fade-up">이메일 마케팅 솔루션 배리의 프론트엔드 개발자로 근무하였습니다. 배리의 프론트엔드 개발을 담당하며 경험하고 배운 것들을 정리한 <a class="inline-link" href="https://github.com/blocktobody/vary" target="_blank">블로그</a>에서 자세한 내용을 확인하실 수 있습니다.</p>
+      <p class="work-detail__role animate-fade-up"><strong>role&nbsp;&nbsp;&nbsp;</strong>이메일 에디터와 메인 앱 프론트엔드 개발</p>
+      <ul class="work-detail__taglist noselect">
+        <li class="work-detail__tagitem animate-fade-up">이메일 솔루션</li>
+        <li class="work-detail__tagitem animate-fade-up">에디터</li>
+        <li class="work-detail__tagitem animate-fade-up">프론트엔드 개발</li>
+      </ul>
+    </div>{# work-detail__txtarea #}
+    <div class="work-detail__imgarea animate-fade-left pc-only">
+      <img src="/assets/img/work/mockup-13.jpg" alt="배리">
+    </div>
+  </div>{# container #}
+</section>{# section-rancho #}
+
+{% endblock %}

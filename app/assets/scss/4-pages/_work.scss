@@ -89,11 +89,12 @@
   }
 }
 
-.work-vary {
+.work-dev {
   width: 100%;
   height: 490px;
-  background: url(../img/work/item-13-bw.jpg) 50% / cover no-repeat;
   margin: 40px 0 100px;
+  filter: grayscale(1);
+  transition: all ease-in-out .3s;
 
   @media #{$sp} {
     height: 200px;
@@ -101,7 +102,35 @@
 
   &:hover {
     @media #{$pc} {
-      background: url(../img/work/item-13-rgb.jpg) 50% / cover no-repeat;
+      filter: grayscale(0);
+    }
+  }
+
+  &--vary {
+    background: url(../img/work/item-13-rgb.jpg) 50% / cover no-repeat;
+
+    .work-dev__logo {
+      width: 160px;
+      height: 160px;
+
+      @media #{$sp} {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  &--mrt {
+    background: url(../img/work/item-14-rgb.jpg) 50% / cover no-repeat;
+
+    .work-dev__logo {
+      width: 300px;
+      height: 300px;
+
+      @media #{$sp} {
+        width: 160px;
+        height: 160px;
+      }
     }
   }
 
@@ -116,7 +145,7 @@
     transition: all ease-in-out .3s;
 
     &:hover {
-      .work-vary__logo {
+      .work-dev__logo {
         @media #{$pc} {
           transform: scale(1.05);
         }
@@ -125,15 +154,8 @@
   }
 
   &__logo {
-    width: 160px;
-    height: 160px;
     position: relative;
     transition: all ease-in-out .3s;
-
-    @media #{$sp} {
-      width: 100px;
-      height: 100px;
-    }
   }
 }
 
@@ -168,12 +190,7 @@
         grid-area: a;
       }
       .work-grid__link {
-        background: url(../img/work/item-01-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-01-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-01-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -194,12 +211,7 @@
         grid-area: b;
       }
       .work-grid__link {
-        background: url(../img/work/item-02-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-02-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-02-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -219,12 +231,7 @@
         grid-area: c;
       }
       .work-grid__link {
-        background: url(../img/work/item-03-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-03-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-03-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -244,12 +251,7 @@
         grid-area: d;
       }
       .work-grid__link {
-        background: url(../img/work/item-04-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-04-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-04-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -269,12 +271,7 @@
         grid-area: e;
       }
       .work-grid__link {
-        background: url(../img/work/item-05-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-05-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-05-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -294,12 +291,7 @@
         grid-area: f;
       }
       .work-grid__link {
-        background: url(../img/work/item-06-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-06-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-06-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -320,12 +312,7 @@
         grid-area: g;
       }
       .work-grid__link {
-        background: url(../img/work/item-07-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-07-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-07-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -345,12 +332,7 @@
         grid-area: h;
       }
       .work-grid__link {
-        background: url(../img/work/item-08-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-08-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-08-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -370,12 +352,7 @@
         grid-area: i;
       }
       .work-grid__link {
-        background: url(../img/work/item-09-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-09-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-09-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -395,12 +372,7 @@
         grid-area: j;
       }
       .work-grid__link {
-        background: url(../img/work/item-10-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-10-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-10-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -420,12 +392,7 @@
         grid-area: k;
       }
       .work-grid__link {
-        background: url(../img/work/item-11-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-11-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-11-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -445,12 +412,7 @@
         grid-area: l;
       }
       .work-grid__link {
-        background: url(../img/work/item-12-bw.jpg) 50% / cover no-repeat;
-        &:hover {
-          @media #{$pc} {
-            background: url(../img/work/item-12-rgb.jpg) 50% / cover no-repeat;
-          }
-        }
+        background: url(../img/work/item-12-rgb.jpg) 50% / cover no-repeat;
       }
 
       .work-grid__logo {
@@ -470,9 +432,14 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    filter: grayscale(1);
     transition: all ease-in-out .3s;
 
     &:hover {
+      @media #{$pc} {
+        filter: grayscale(0);
+      }
+
       .work-grid__logo {
         @media #{$pc} {
           transform: scale(1.05);
@@ -517,12 +484,16 @@
 
   &__link {
     position: relative;
-    padding-left: 30px;
+    padding-left: 26px;
     margin-bottom: 40px;
     @media #{$sp} {
       font-size: 15px;
-      padding-left: 25px;
+      padding-left: 20px;
       margin-bottom: 30px;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 16px;
     }
 
     &::before {
